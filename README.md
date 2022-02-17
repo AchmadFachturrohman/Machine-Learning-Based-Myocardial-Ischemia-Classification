@@ -1,7 +1,14 @@
-# Machine-Learning-Based-Myocardial-Ischemia-Classification
+# Discrete-Wavelet-Transform-to-ECG-Peaks-Detections
 
-This program is the result of my research on the detection of myocardial ischemia using an artificial neural network classifier. 
-The dataset used in this study was obtained from discrete wavelet transforms, such as the 5th scale of decomposed signal and ECG peaks. 
-From the tests I did, I got the best results with data containing 5th scale of decomposed signal with 96.17% accuracy, 93.08% precision, 95.6% specificity, and 97.11% sensitivity
+This program is the result of my research to detect peak ECG waves from patients with myocardial ischemia. 
+The data used to create the algorithm comes from recording using a microcontroller, Mikromedia 4 for STM32F4 from mikroe.com with input signals from 
+Multiparameter simulator MS400 and dataset from Physionet MIT-BIH ST Change as abnormal ECG signals and MIT-BIH Normal as normal ECG signals. 
+You can see the results of this program in the "result" folder. 
+
+while for references from this research you can read and find out in this link:
+1. http://juti.if.its.ac.id/index.php/juti/article/view/992
+2. https://www.sciencedirect.com/science/article/abs/pii/S016926079701780X
+3. https://ieeexplore.ieee.org/abstract/document/5412588
+4. https://ieeexplore.ieee.org/abstract/document/1275572
 
 I hope this program can help your works as well. Thank you
