@@ -1,7 +1,7 @@
 # Discrete-Wavelet-Transform-to-ECG-Peaks-Detections
 
 This program is the result of my research to detect peak ECG waves from patients with myocardial ischemia. 
-The data used to create the algorithm comes from recording using a microcontroller, Mikromedia 4 for STM32F4 from mikroe.com with input signals from 
+The data used to create the algorithm comes from recording using a microcontroller, Mikromedia 4 for STM32F4 from https://mikroe.com with input signals from 
 Multiparameter simulator MS400 and dataset from Physionet MIT-BIH ST Change as abnormal ECG signals and MIT-BIH Normal as normal ECG signals. 
 You can see the results of this program in the "result" folder. 
 
