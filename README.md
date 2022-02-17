@@ -1,0 +1,5 @@
+# Machine-Learning-Based-Myocardial-Ischemia-Classification
+
+This program is the result of my research on the detection of myocardial ischemia using an artificial neural network classifier. 
+The dataset used in this study was obtained from discrete wavelet transforms, such as the 5th scale of decomposed signal and ECG peaks. 
+From the tests I did, I got the best results with data containing 5th scale of decomposed signal with 96.17% accuracy, 93.08% precision, 95.6% specificity, and 97.11% sensitivity
