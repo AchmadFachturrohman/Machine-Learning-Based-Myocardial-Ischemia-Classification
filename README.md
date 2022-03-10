@@ -4,7 +4,7 @@ This program is the result of my research to detect peak ECG waves from patients
 The data used to create the algorithm comes from recording using a microcontroller [Mikromedia 4 for STM32F4](https://mikroe.com/mikromedia-4-for-stm32-capacitive), medical instrumentation [ECG Click](https://www.mikroe.com/ecg-click) and serial communication [USB UART Click](https://www.mikroe.com/usb-uart-click) to grab and recording the signals. Then the input signals are ECG Rate 60 BPM as Normal and ST-Wave elevation and depression as Ischemia from [Multiparameter simulator MS400](https://contechealth.com/products/ms400-multiparameter-simulator). Also datasets from Physionet [MIT-BIH Normal](https://archive.physionet.org/cgi-bin/atm/ATM) as normal and [MIT-BIH ST Change](https://archive.physionet.org/cgi-bin/atm/ATM) as Ischemia.
 You can see the results of this program in the "result" folder. 
 
-while for references from this research you can read and find out in this link:
+References of this algorithm click on the links below:
 1. http://juti.if.its.ac.id/index.php/juti/article/view/992
 2. https://www.sciencedirect.com/science/article/abs/pii/S016926079701780X
 3. https://ieeexplore.ieee.org/abstract/document/5412588
