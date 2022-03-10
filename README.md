@@ -10,4 +10,4 @@ while for references from this research you can read and find out in this link:
 3. https://ieeexplore.ieee.org/abstract/document/5412588
 4. https://ieeexplore.ieee.org/abstract/document/1275572
 
-I hope this DWT program that i've made can help your works as well. Thank you
+Then after 5th scale of decomposed ECG signal and the ECG peaks is obtained which can be used for classification input using an Artificial Neural Network (ANN). The code you can find in "Classification using ANN"
