@@ -9,4 +9,4 @@ References of this algorithm click on the links below:
 3. https://ieeexplore.ieee.org/abstract/document/5412588
 4. https://ieeexplore.ieee.org/abstract/document/1275572
 
-After that, 5th scale of decomposed ECG signal and the ECG peaks is obtained which can be used for classification input using an Artificial Neural Network (ANN). The code you can find in "Classification using ANN"
+After that, 5th scale of decomposed ECG signal and the ECG peaks is obtained which can be used for classification input using an Artificial Neural Network (ANN). The ANN code you check in [here](https://github.com/AchmadFachturrohman/Machine-Learning-Based-Myocardial-Ischemia-Classification/tree/ANN-Classifier)
