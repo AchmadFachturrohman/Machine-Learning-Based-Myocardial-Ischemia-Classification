@@ -9,25 +9,26 @@ Ischemia is a heart disease caused by atherosclerosis, namely narrowing of blood
 - [Result](#section-5)
 - [References](#section-6)
 - [Contact Us](#section-7)
+- [BibTex](#section-8)
 
-## [Motivation](#section-1)
+## Motivation
 Myocardial ischemia is a heart disease caused by atherosclerosis, a narrowing of the arteries caused by the buildup of cholesterol in the form of plaque in the arteries, which results in blocked blood flow back to the heart. Myocardial ischemia causes the heart muscle to lack oxygen supply and reduces the heart's ability to pump blood. If this condition occurs continuously, it can lead to heart attack complications (myocardial infarction). Based on the cause, ischemic heart disease is classified as coronary heart disease (CHD). CHD population is found in groups of people who rarely do physical activity or do less than 80 minutes of physical activity per week. This group is compared to those who are much more active, which means that the majority of sufferers are groups of people who are less physically active. Based on data from the World Health Organization estimates in 2019, ischemic heart disease is the main cause of death in the world, accounting for 8.9 million people have died. Meanwhile, in Indonesia, it is reported that CHD is the leading cause of death by 26.4%. This situation is four times higher than the death rate caused by cancer (6%). Over the past few years, monitoring the electrical signals of the heart using the Electrocardiograph (ECG) has become the most widely used non-invasive method in hospitals. Pain in the left chest (angina pectoris) is one of the most common physical symptoms experienced by patients with ischemic heart disease. The main motivation is to detect early the clinical condition of the patient's heart to avoid complications that can harm him in the future. and if he has symptoms, appropriate medical treatment can be carried out to minimize complications.
 
 Another motivation is to complete my studies and earn a bachelor's degree in engineering.
 
-## [Dataset](#section-2)
+## Dataset
 The ECG signal dataset used in this research origins from [Physionet](https://archive.physionet.org/cgi-bin/atm/ATM) with MIT-BIH Normal and MIT-BIH ST Change for Normal and Ischemia ECG signal, respectively. 
 
-## [Signal Processing](#section-3)
+## Signal Processing
 This process is DWT to get the feature extraction data of the ECG signal, the 5th decomposed and all peaks of the ECG. The data is then saved in CSV format and used as an input to the Neural Network. I used 3000 sequence data of each type of data.
 
-## [Neural Network](#section-4)
+## Neural Network
 After I got all of the data, I build a model for training using the stored data. The architecture that I used is an ANN with 250 nodes of inputs, 2 hidden layers, and 1 output layer with 2 nodes that represent the classes of normal and ischemia.
 
-## [Result](#section-5)
+## Result
 (coming soon)
 
-## [References](#section-6)
+## References
 -	W. H. O. (WHO), "Global Health Estimates: Life expectancy and leading causes of death and disability," 2019. https://www.who.int/data/gho/data/themes/mortality- and-global-health-estimates (accessed Jun. 10, 2021).
 -	H. S. N. Murthy and D. M. Meenakshi, "ANN, SVM and KNN Classifiers for Prognosis of Cardiac Ischemia- A Comparison," Bonfring Int. J. Res. Commun. Eng., vol. 5, no. 2, pp. 07–11, 2015, doi: 10.9756/bijrce.8030.
 -	N. F. Hikmah, A. Arifin, T. A. Sardjono and E. A. Suprayitno, "A signal processing framework for multimodal cardiac analysis," 2015 International Seminar on Intelligent Technology and Its Applications (ISITIA), 2015, pp. 125-130, doi: 10.1109/ISITIA.2015.7219966.
@@ -35,6 +36,12 @@ After I got all of the data, I build a model for training using the stored data.
 -	J. P. Martínez, R. Almeida, S. Olmos, A. P. Rocha, and P. Laguna, “A Wavelet-Based ECG Delineator Evaluation on Standard Databases,” IEEE Trans. Biomed. Eng., vol. 51, no. 4, pp. 570–581, 2004, doi: 10.1109/TBME.2003.821031. 
 -	M. Bahoura, M. Hassani, and M. Hubin, "DSP implementation of wavelet transform for real time ECG wave forms detection and heart rate analysis," Comput. Methods Programs Biomed., vol. 52, no. 1, pp. 35–44, 1997, doi: 10.1016/S0169-2607(97)01780-X. 
 -	M. Niknazar, B. V. Vahdat, and S. R. Mousavi, "Detection of characteristic points of ecg using quadratic spline wavelet transfrom," 3rd Int. Conf. Signals, Circuits Syst. SCS 2009, no. 2, pp. 2–7, 2009, doi: 10.1109/ICSCS.2009.5412588.
+
+## Contact Us
+Email: achmadfachturrohman@gmail.com
+
+## BibTex
+in the process of publication in ICEBEHI 2022
 
 
 
