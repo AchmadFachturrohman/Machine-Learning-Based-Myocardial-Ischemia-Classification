@@ -27,7 +27,7 @@ Another motivation is to complete my studies and earn a bachelor's degree in eng
 The ECG signal dataset used in this research origins from [Physionet](https://archive.physionet.org/cgi-bin/atm/ATM) with MIT-BIH Normal and MIT-BIH ST Change for Normal and Ischemia ECG signal, respectively. 
 
 ## Signal Processing
-This process is DWT to get the feature extraction data of the ECG signal, the 5th decomposed and all peaks of the ECG. The signal will be extracted using DWT with Quadratic Spline. The saved data in CSV will be used as an input to the Neural Network. I used 3000 sequence data of each type of data.
+This process is DWT to get the feature extraction data of the ECG signal, the 5th decomposed and all peaks of the ECG. The signal will be extracted using DWT with a Quadratic Spline. The saved data in CSV will be used as an input to the Neural Network. I used 3000 sequence data of each type of data.
 - DWT Algorithm
 	<p align="center">
   	<img src="https://user-images.githubusercontent.com/80017569/233288995-9c20791a-8b55-4ee7-b898-f01c40146d3f.jpg">
