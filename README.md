@@ -7,10 +7,11 @@ Ischemia is a heart disease caused by atherosclerosis, namely narrowing of blood
 - [Dataset](#section-3)
 - [Signal Processing](#section-4)
 - [Neural Network](#section-5)
-- [Result](#section-6)
-- [References](#section-7)
-- [Contact Us](#section-8)
-- [BibTex](#section-9)
+- [Experiment](#section-6)
+- [Result](#section-7)
+- [References](#section-8)
+- [Contact Us](#section-9)
+- [BibTex](#section-1-1)
 
 ## Motivation
 The main motivation is to detect early the clinical condition of the patient's heart to avoid complications that can harm him in the future. and if he has symptoms, appropriate medical treatment can be carried out to minimize complications.
@@ -24,14 +25,19 @@ Another motivation is to complete my studies and earn a bachelor's degree in eng
 The ECG signal dataset used in this research origins from [Physionet](https://archive.physionet.org/cgi-bin/atm/ATM) with MIT-BIH Normal and MIT-BIH ST Change for Normal and Ischemia ECG signal, respectively. 
 
 ## Signal Processing
-This process is DWT to get the feature extraction data of the ECG signal, the 5th decomposed and all peaks of the ECG. The data is then saved in CSV format and used as an input to the Neural Network. I used 3000 sequence data of each type of data.
+This process is DWT to get the feature extraction data of the ECG signal, the 5th decomposed and all peaks of the ECG. The signal will be extracted using DWT with Quadratic Spline. The saved data in CSV will be used as an input to the Neural Network. I used 3000 sequence data of each type of data.
 - DWT Algorithm
+	
 	![flowchart wavelet](https://user-images.githubusercontent.com/80017569/233288995-9c20791a-8b55-4ee7-b898-f01c40146d3f.jpg) 
 
 ## Neural Network
 After I got all of the data, I build a model for training using the stored data. The architecture that I used is an ANN with 250 nodes of inputs, 2 hidden layers, and 1 output layer with 2 nodes that represent the classes of normal and ischemia.
-- Model Architechture
-	![ANN Flowchart](https://user-images.githubusercontent.com/80017569/233289348-37af1815-a8c5-4951-86f4-7da743a39220.jpg)
+- Model Architecture
+   	
+	![ANN Flowchart](https://user-images.githubusercontent.com/80017569/233289348-37af1815-a8c5-4951-86f4-7da743a39220.jpg) 
+	
+## Experiment
+Experiments conducted in this study by comparing the neural network results of two types of input data including ECG signal peak data and 5th decomposition data generated from DWT.
 
 ## Result
 #### DWT with MIT-BIH ST-Change 300 
@@ -42,6 +48,28 @@ After I got all of the data, I build a model for training using the stored data.
 ![Capture dwt e 0 3](https://user-images.githubusercontent.com/80017569/233287500-3bc7c8f5-62b2-498e-8ac7-549c3a3ef5de.PNG)
 #### DWT with MS400 ST-Wave Depression 0.3mV
 ![Capture dwt d 0 3](https://user-images.githubusercontent.com/80017569/233287616-e63c7801-33a0-4e35-bcb3-f55fbbbeb84e.PNG)
+#### Experiment Result Comparison
+- Training and Validation Accuracy
+	- Peaks Data
+	
+	![acc_plot](https://user-images.githubusercontent.com/80017569/233293461-c01efb5e-d250-479e-a3f0-b0206524b5ef.jpg)	
+	- Decomposed Data
+	
+	![acc_plot_decomp](https://user-images.githubusercontent.com/80017569/233294887-ea408fc6-3ae6-4c55-a094-39c2a88fafa4.jpg)
+- Confusion Matrix
+	- Peaks Data
+	
+	![confusion_matrix](https://user-images.githubusercontent.com/80017569/233293797-e332389f-9d8e-4a83-889b-a40e56eab181.jpg)	
+	- Decomposed Data
+	
+	![confusion_matrix_decomp](https://user-images.githubusercontent.com/80017569/233294943-6534a20c-d3c1-4ef4-bff8-879e5dc20ddb.jpg)
+- Classification Reports
+	- Peaks Data
+	
+	![classification_report](https://user-images.githubusercontent.com/80017569/233294191-1c2fc20c-ff28-4d99-b5d8-28e9512b198c.jpg)	
+	- Decomposed Data
+	
+	![classification_report_decomp](https://user-images.githubusercontent.com/80017569/233295002-41816058-e96a-40ce-8a70-559576c40257.jpg)
 
 ## References
 -	Ischemia: https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates
