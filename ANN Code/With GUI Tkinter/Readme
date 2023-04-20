@@ -1,0 +1,5 @@
+To prevent error while you running the program, Please command these line:
+
+bg_app_raw = Image.open("D:/PICTURE/Death-Is-Not-the-End.jpg")
+image1 = Image.open("D:/PICTURE/Logo-ITS-Institut-Teknologi-Sepuluh-November-Original.png")
+image2 = Image.open("D:/PICTURE/bme logo.png")

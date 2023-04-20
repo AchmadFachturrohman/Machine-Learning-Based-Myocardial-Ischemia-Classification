@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, VclTee.TeeGDIPlus, VCLTee.TeEngine,
   VCLTee.Series, Vcl.ExtCtrls, VCLTee.TeeProcs, VCLTee.Chart, Vcl.Buttons, math,
-  Vcl.StdCtrls, Vcl.ComCtrls, VCLTee.TeeTools;
+  Vcl.StdCtrls, Vcl.ComCtrls;
 
 type
   myarray = array [-100..100000] of extended;
@@ -84,7 +84,6 @@ type
     Grad4Plot: TLineSeries;
     Grad5Plot: TLineSeries;
     ListBox6: TListBox;
-    ListBox7: TListBox;
     Peaks3Plot: TPointSeries;
     ListBox8: TListBox;
     ListBox9: TListBox;
@@ -99,13 +98,11 @@ type
     Series10: TLineSeries;
     Series11: TLineSeries;
     SaveDialog1: TSaveDialog;
-    ListBox11: TListBox;
     Label9: TLabel;
     Label10: TLabel;
     ListBox12: TListBox;
     Label5: TLabel;
     Label29: TLabel;
-    ChartTool9: TAxisScrollBarTool;
     Hasil3Plot: TLineSeries;
     Peaks1Plot: TPointSeries;
     Peaks2Plot: TPointSeries;
@@ -126,6 +123,14 @@ type
     Edit1: TEdit;
     Label6: TLabel;
     Button2: TButton;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label12: TLabel;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    Memo3: TMemo;
+    Memo4: TMemo;
+    Memo5: TMemo;
     procedure Buka_file;
     procedure cari_file(in1 :integer);
     procedure simpan_data(in1 :myArray);
@@ -310,6 +315,7 @@ begin
     Grad3Plot.AddXY(i,grad3[i]);
     Grad4Plot.AddXY(i,grad4[i]);
     Grad5Plot.AddXY(i,grad5[i]);
+    memo3.Lines.Add(inttostr(i) + ', ' + floattostrf(grad5[i],ffnumber,3,3));
   end;
 
   if RadioButton1.Checked = True then
@@ -318,7 +324,7 @@ begin
 
     for i := T1 to 999 do
     begin
-      Listbox8.Items.Add(floattostr(h_conv1[i]));
+      Listbox8.Items.Add(inttostr(i) + ', ' + floattostr(h_conv1[i]));
       if grad1[i] > th1 then //skala 1
       begin
         hasil1[i] := 1;
@@ -337,7 +343,7 @@ begin
 
     for i := T2 to 999 do
     begin
-      Listbox9.Items.Add(floattostr(h_conv2[i]));
+      Listbox9.Items.Add(inttostr(i) + ', ' + floattostr(h_conv2[i]));
       if grad2[i] > th1 then   //skala 2
       begin
         hasil2[i] := 1;
@@ -356,7 +362,7 @@ begin
 
     for i := T3 to 999 do
     begin
-      Listbox10.Items.Add(floattostr(h_conv3[i]));
+      Listbox10.Items.Add(inttostr(i) + ', ' + floattostr(h_conv3[i]));
       if grad3[i] > th1  then //skala 3
       begin
         hasil3[i] := 1;
@@ -387,7 +393,7 @@ begin
 
     for i := T4 to 999 do    //skala 4
     begin
-      Listbox6.Items.Add(floattostr(h_conv4[i]));
+      Listbox6.Items.Add(inttostr(i) + ', ' + floattostr(h_conv4[i]));
       if grad4[i] >= th1 then
       begin
         hasil4[i] := 1;
@@ -418,26 +424,26 @@ begin
 
     for i := T5 to 999 do //skala 5
     begin
-      Listbox11.Items.Add(floattostr(h_conv5[i]));
+      memo2.Lines.Add(inttostr(i) + ', ' + floattostrf(h_conv5[i],ffnumber,3,3));
       if grad5[i] >= 0.4 then  //lebar P,QRS,T
       begin
         hasil5[i] := 1;
         if ((h_conv5[i] >= -0.1) and (h_conv5[i+1] <= -0.1)) then  //puncak P,R,T
         begin
           peak5[i] := x[i];
-          ListBox7.Items.Add(inttostr(i) + ',' + floattostrf(peak5[i],ffnumber,3,3));
+          memo5.Lines.Add(inttostr(i) + ', ' + floattostrf(peak5[i],ffnumber,3,3));
           Peaks5Plot.AddXY(i,peak5[i]);
         end else
         if (grad5[i] <= 1.5) and (grad5[i+1] >= 1.5) then //puncak Q
         begin
           peak5[i] := x[i];
-          ListBox7.Items.Add(inttostr(i) + ',' + floattostrf(peak5[i],ffnumber,3,3));
+          memo5.Lines.Add(inttostr(i) + ', ' + floattostrf(peak5[i],ffnumber,3,3));
           Peaks5Plot.AddXY(i,peak5[i]);
         end else
         if (h_conv5[i] >= -3.1) and (h_conv5[i+1] <= -3.1) then   //puncak S
         begin
           peak5[i] := x[i];
-          ListBox7.Items.Add(inttostr(i) + ',' + floattostrf(peak5[i],ffnumber,3,3));
+          memo5.Lines.Add(inttostr(i) + ', ' + floattostrf(peak5[i],ffnumber,3,3));
           Peaks5Plot.AddXY(i,peak5[i]);
         end;
       end else
@@ -453,6 +459,7 @@ begin
         hasil53[i] := 0;
       end;
       Hasil5Plot.AddXY(i,hasil5[i]);
+      memo4.Lines.Add(inttostr(i) + ', ' + floattostrf(hasil5[i],ffnumber,3,3));
     end;
   end;
 
@@ -462,7 +469,7 @@ begin
 
     for i := T1 to 999 do
     begin
-      Listbox8.Items.Add(floattostr(h_conv1[i]));
+      Listbox8.Items.Add(inttostr(i) + ', ' + floattostr(h_conv1[i]));
       if grad1[i] > th1 then //skala 1
       begin
         hasil1[i] := 1;
@@ -481,7 +488,7 @@ begin
 
     for i := T2 to 999 do
     begin
-      Listbox9.Items.Add(floattostr(h_conv2[i]));
+      Listbox9.Items.Add(inttostr(i) + ', ' + floattostr(h_conv2[i]));
       if grad2[i] > th1 then   //skala 2
       begin
         hasil2[i] := 1;
@@ -500,7 +507,7 @@ begin
 
     for i := T3 to 999 do
     begin
-      Listbox10.Items.Add(floattostr(h_conv3[i]));
+      Listbox10.Items.Add(inttostr(i) + ', ' + floattostr(h_conv3[i]));
       if grad3[i] > th1  then //skala 3
       begin
         hasil3[i] := 1;
@@ -519,7 +526,7 @@ begin
 
     for i := T4 to 999 do
     begin
-      Listbox6.Items.Add(floattostr(h_conv4[i]));
+      Listbox6.Items.Add(inttostr(i) + ', ' + floattostr(h_conv4[i]));
       if grad4[i] > th1 then      //skala 4
       begin
         hasil4[i] := 1;
@@ -550,26 +557,26 @@ begin
 
     for i := T5 to 999 do
     begin
-      Listbox11.Items.Add(floattostr(h_conv5[i]));  //skala 5
+      memo2.Lines.Add(inttostr(i) + ', ' + floattostrf(h_conv5[i],ffnumber,3,3));  //skala 5
       if grad5[i] >= th1 then  //lebar P,QRS,T
       begin
         hasil5[i] := 1;
         if ((grad5[i-1] < grad5[i]) and (grad5[i] > grad5[i+1]))  then //puncak P,R,T
         begin
           peak5[i] := x_norm[i];
-          ListBox7.Items.Add(inttostr(i) + ',' + floattostrf(peak5[i],ffnumber,3,3));
+          memo5.Lines.Add(inttostr(i) + ', ' + floattostrf(peak5[i],ffnumber,3,3));
           Peaks5Plot.AddXY(i,peak5[i]);
         end else
         if (grad5[i] <= 1.2) and (grad5[i+1] >= 1.2) then //puncak Q
         begin
           peak5[i] := x_norm[i];
-          ListBox7.Items.Add(inttostr(i) + ',' + floattostrf(peak5[i],ffnumber,3,3));
+          memo5.Lines.Add(inttostr(i) + ', ' + floattostrf(peak5[i],ffnumber,3,3));
           Peaks5Plot.AddXY(i,peak5[i]);
         end else
         if (grad5[i] >= 1.1) and (grad5[i+1] <= 1.1) then //puncak S
         begin
           peak5[i] := x_norm[i];
-          ListBox7.Items.Add(inttostr(i) + ',' + floattostrf(peak5[i],ffnumber,3,3));
+          memo5.Lines.Add(inttostr(i) + ', ' + floattostrf(peak5[i],ffnumber,3,3));
           Peaks5Plot.AddXY(i,peak5[i]);
         end;
       end else
@@ -586,6 +593,7 @@ begin
         hasil52[i] := 0.5;
       end;
       Hasil5Plot.AddXY(i,hasil5[i]);
+      memo4.Lines.Add(inttostr(i) + ', ' + floattostrf(hasil5[i],ffnumber,3,3));
     end;
   end;
 end;
@@ -693,8 +701,8 @@ begin
   Grad1Plot.Clear; Grad2Plot.Clear; Grad3Plot.Clear; Grad4Plot.Clear; Grad5Plot.Clear;
   Peaks1Plot.Clear; Peaks2Plot.Clear; Peaks3Plot.Clear; Peaks4Plot.Clear; Peaks5Plot.Clear;
   Listbox1.Clear; Listbox2.Clear; Listbox3.Clear; Listbox4.Clear; Listbox5.Clear;
-  Listbox6.Clear; Listbox7.Clear; Listbox8.Clear; Listbox9.Clear; Listbox10.Clear;
-  Listbox11.Clear; Listbox12.Clear; Listbox13.Clear; Listbox14.Clear; Listbox15.Clear;
+  Listbox6.Clear; memo5.Clear; Listbox8.Clear; Listbox9.Clear; Listbox10.Clear;
+  memo2.Clear; memo3.Clear; memo4.Clear; Listbox12.Clear; Listbox13.Clear; Listbox14.Clear; Listbox15.Clear;
 
   if FileExists('koefisien filter_1.txt') = false then
   begin
@@ -834,6 +842,7 @@ begin
       ECG3Plot.AddXY(i,x[i]);
       ECG4Plot.AddXY(i,x[i]);
       ECG5Plot.AddXY(i,x[i]);
+      memo1.Lines.Add(inttostr(i) + ', ' + floattostrf(x[i],ffnumber,3,3));
     end;
   end else
   if RadioButton2.Checked = True then
@@ -848,6 +857,7 @@ begin
       ECG3Plot.AddXY(i,x_norm[i]);
       ECG4Plot.AddXY(i,x_norm[i]);
       ECG5Plot.AddXY(i,x_norm[i]);
+      memo1.Lines.Add(inttostr(i) + ', ' + floattostrf(x_norm[i],ffnumber,3,3));
     end;
   end;
 end;
@@ -955,7 +965,7 @@ procedure TForm1.Button2Click(Sender: TObject);
 var
   i: Integer;
 begin
-  Series1.Clear; Series2.Clear;
+  Series1.Clear; Series2.Clear; memo1.Clear; memo3.Clear; memo4.Clear;
   ECG1Plot.Clear; ECG2Plot.Clear; ECG3Plot.Clear; ECG4Plot.Clear; ECG5Plot.Clear;
 
   Series5.Clear;
@@ -967,8 +977,8 @@ begin
   Grad1Plot.Clear; Grad2Plot.Clear; Grad3Plot.Clear; Grad4Plot.Clear; Grad5Plot.Clear;
   Peaks1Plot.Clear; Peaks2Plot.Clear; Peaks3Plot.Clear; Peaks4Plot.Clear; Peaks5Plot.Clear;
   Listbox1.Clear; Listbox2.Clear; Listbox3.Clear; Listbox4.Clear; Listbox5.Clear;
-  Listbox6.Clear; Listbox7.Clear; Listbox8.Clear; Listbox9.Clear; Listbox10.Clear;
-  Listbox11.Clear; Listbox12.Clear; Listbox13.Clear; Listbox14.Clear; Listbox15.Clear;
+  Listbox6.Clear; memo5.Clear; Listbox8.Clear; Listbox9.Clear; Listbox10.Clear;
+  memo2.Clear; Listbox12.Clear; Listbox13.Clear; Listbox14.Clear; Listbox15.Clear;
   Label11.Caption := ' ';
 
   for i := 0 to jmldata-1 do

@@ -155,7 +155,6 @@ object Form1: TForm1
         DefaultCanvas = 'TGDIPlusCanvas'
         ColorPaletteIndex = 13
         object Series1: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlack
           Title = 'ECG'
           Brush.BackColor = clDefault
@@ -237,7 +236,6 @@ object Form1: TForm1
         DefaultCanvas = 'TGDIPlusCanvas'
         ColorPaletteIndex = 13
         object Series5: TBarSeries
-          HoverElement = []
           Legend.Visible = False
           Marks.Visible = False
           SeriesColor = 33023
@@ -246,20 +244,6 @@ object Form1: TForm1
           XValues.Order = loAscending
           YValues.Name = 'Bar'
           YValues.Order = loNone
-        end
-        object ChartTool9: TAxisScrollBarTool
-          ArrowBrush.BackColor = clGray
-          Brush.BackColor = 15790320
-          DisabledArrow.BackColor = clWhite
-          DrawStyle = dsAlways
-          Pen.Color = 6579300
-          Thumb.Brush.Color = clSilver
-          Thumb.Brush.BackColor = clSilver
-          Thumb.Pen.Visible = False
-          ThumbBrush.Color = clSilver
-          ThumbBrush.BackColor = clSilver
-          Margin = 18
-          AxisID = 0
         end
       end
     end
@@ -348,7 +332,6 @@ object Form1: TForm1
         DefaultCanvas = 'TGDIPlusCanvas'
         ColorPaletteIndex = 13
         object ECG1Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlack
           Title = 'ECG'
           Brush.BackColor = clDefault
@@ -360,7 +343,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object w1fPlot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clRed
           Title = 'w1f'
           Brush.BackColor = clDefault
@@ -372,7 +354,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Grad1Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clGreen
           Title = 'Gradien'
           Brush.BackColor = clDefault
@@ -384,7 +365,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Hasil1Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlue
           Title = 'Lebar Gel'
           Brush.BackColor = clDefault
@@ -396,7 +376,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Peaks1Plot: TPointSeries
-          HoverElement = [heCurrent]
           Title = 'Puncak'
           ClickableLine = False
           Pointer.Brush.Color = clRed
@@ -509,7 +488,6 @@ object Form1: TForm1
         DefaultCanvas = 'TGDIPlusCanvas'
         ColorPaletteIndex = 13
         object ECG2Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlack
           Title = 'ECG'
           Brush.BackColor = clDefault
@@ -521,7 +499,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object w2fPlot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clRed
           Title = 'w2f'
           Brush.BackColor = clDefault
@@ -533,7 +510,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Grad2Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clGreen
           Title = 'Gradien'
           Brush.BackColor = clDefault
@@ -545,7 +521,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Hasil2Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlue
           Title = 'Lebar Gel'
           Brush.BackColor = clDefault
@@ -557,7 +532,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Peaks2Plot: TPointSeries
-          HoverElement = [heCurrent]
           Title = 'Puncak'
           ClickableLine = False
           Pointer.Brush.Color = clRed
@@ -670,7 +644,6 @@ object Form1: TForm1
         DefaultCanvas = 'TGDIPlusCanvas'
         ColorPaletteIndex = 13
         object ECG3Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlack
           Title = 'ECG'
           Brush.BackColor = clDefault
@@ -682,7 +655,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object w3fplot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clRed
           Title = 'w3f'
           Brush.BackColor = clDefault
@@ -694,7 +666,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Grad3Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clGreen
           Title = 'Gradien'
           Brush.BackColor = clDefault
@@ -706,7 +677,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Hasil3Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlue
           Title = 'Lebar Gel'
           Brush.BackColor = clDefault
@@ -718,7 +688,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Peaks3Plot: TPointSeries
-          HoverElement = [heCurrent]
           SeriesColor = clRed
           Title = 'Puncak'
           ClickableLine = False
@@ -830,7 +799,6 @@ object Form1: TForm1
         DefaultCanvas = 'TGDIPlusCanvas'
         ColorPaletteIndex = 13
         object ECG4Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = 64
           Title = 'ECG'
           Brush.BackColor = clDefault
@@ -842,7 +810,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object w4fPlot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clRed
           Title = 'w4f'
           Brush.BackColor = clDefault
@@ -854,7 +821,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Grad4Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clGreen
           Title = 'Gradien'
           Brush.BackColor = clDefault
@@ -866,7 +832,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Hasil4Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlue
           Title = 'Lebar Gel'
           Brush.BackColor = clDefault
@@ -878,7 +843,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Peaks4Plot: TPointSeries
-          HoverElement = [heCurrent]
           Title = 'Puncak'
           ClickableLine = False
           Pointer.Brush.Color = clRed
@@ -912,17 +876,38 @@ object Form1: TForm1
       ImageIndex = 7
       object Label9: TLabel
         Left = 631
-        Top = 130
+        Top = 377
         Width = 63
         Height = 13
         Caption = 'Titik Puncak :'
       end
       object Label10: TLabel
         Left = 631
-        Top = 3
+        Top = 94
         Width = 65
         Height = 13
         Caption = 'Dekomposisi :'
+      end
+      object Label7: TLabel
+        Left = 631
+        Top = 288
+        Width = 46
+        Height = 13
+        Caption = 'LebarGel:'
+      end
+      object Label8: TLabel
+        Left = 631
+        Top = 193
+        Width = 37
+        Height = 13
+        Caption = 'Gradien'
+      end
+      object Label12: TLabel
+        Left = 631
+        Top = -1
+        Width = 79
+        Height = 13
+        Caption = 'Normalized ECG:'
       end
       object Chart6: TChart
         Left = 3
@@ -990,7 +975,6 @@ object Form1: TForm1
         DefaultCanvas = 'TGDIPlusCanvas'
         ColorPaletteIndex = 13
         object ECG5Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlack
           Title = 'ECG'
           Brush.BackColor = clDefault
@@ -1002,7 +986,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object w5fplot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clRed
           Title = 'w5f'
           Brush.BackColor = clDefault
@@ -1014,7 +997,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Grad5Plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clGreen
           Title = 'Gradien'
           Brush.BackColor = clDefault
@@ -1026,7 +1008,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object hasil5plot: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlue
           Title = 'LebarGel'
           Brush.BackColor = clDefault
@@ -1038,7 +1019,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Peaks5Plot: TPointSeries
-          HoverElement = [heCurrent]
           Title = 'Puncak'
           ClickableLine = False
           Pointer.Brush.Color = clRed
@@ -1050,21 +1030,42 @@ object Form1: TForm1
           YValues.Order = loNone
         end
       end
-      object ListBox7: TListBox
+      object Memo1: TMemo
         Left = 631
-        Top = 149
-        Width = 121
-        Height = 97
-        ItemHeight = 13
+        Top = 18
+        Width = 128
+        Height = 70
         TabOrder = 1
       end
-      object ListBox11: TListBox
+      object Memo2: TMemo
         Left = 631
-        Top = 22
-        Width = 121
-        Height = 97
-        ItemHeight = 13
+        Top = 113
+        Width = 128
+        Height = 74
         TabOrder = 2
+      end
+      object Memo3: TMemo
+        Left = 631
+        Top = 212
+        Width = 128
+        Height = 70
+        TabOrder = 3
+      end
+      object Memo4: TMemo
+        Left = 631
+        Top = 307
+        Width = 128
+        Height = 70
+        TabOrder = 4
+      end
+      object Memo5: TMemo
+        Left = 631
+        Top = 396
+        Width = 127
+        Height = 70
+        Lines.Strings = (
+          '')
+        TabOrder = 5
       end
     end
     object TabSheet9: TTabSheet
@@ -1220,7 +1221,6 @@ object Form1: TForm1
         DefaultCanvas = 'TGDIPlusCanvas'
         ColorPaletteIndex = 13
         object Q1: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clRed
           Brush.BackColor = clDefault
           Pointer.InflateMargins = True
@@ -1231,7 +1231,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Q2: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlack
           Brush.BackColor = clDefault
           Pointer.InflateMargins = True
@@ -1242,7 +1241,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Q3: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clGreen
           Brush.BackColor = clDefault
           Pointer.InflateMargins = True
@@ -1253,7 +1251,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Q4: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = clBlue
           Brush.BackColor = clDefault
           Pointer.InflateMargins = True
@@ -1264,7 +1261,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Q5: TLineSeries
-          HoverElement = [heCurrent]
           SeriesColor = 33023
           Brush.BackColor = clDefault
           Pointer.InflateMargins = True
@@ -1368,7 +1364,6 @@ object Form1: TForm1
         DefaultCanvas = 'TGDIPlusCanvas'
         ColorPaletteIndex = 13
         object Series2: TLineSeries
-          HoverElement = [heCurrent]
           Legend.Text = 'ECG'
           LegendTitle = 'ECG'
           Brush.BackColor = clDefault
@@ -1380,7 +1375,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Series6: TLineSeries
-          HoverElement = [heCurrent]
           Legend.Text = 'w1f'
           LegendTitle = 'w1f'
           Brush.BackColor = clDefault
@@ -1392,7 +1386,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Series7: TLineSeries
-          HoverElement = [heCurrent]
           Legend.Text = 'w2f'
           LegendTitle = 'w2f'
           Brush.BackColor = clDefault
@@ -1404,7 +1397,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Series9: TLineSeries
-          HoverElement = [heCurrent]
           Legend.Text = 'w3f'
           LegendTitle = 'w3f'
           Brush.BackColor = clDefault
@@ -1416,7 +1408,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Series10: TLineSeries
-          HoverElement = [heCurrent]
           Legend.Text = 'w4f'
           LegendTitle = 'w4f'
           Brush.BackColor = clDefault
@@ -1428,7 +1419,6 @@ object Form1: TForm1
           YValues.Order = loNone
         end
         object Series11: TLineSeries
-          HoverElement = [heCurrent]
           Legend.Text = 'w5f'
           LegendTitle = 'w5f'
           Brush.BackColor = clDefault
