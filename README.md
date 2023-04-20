@@ -29,13 +29,15 @@ After I got all of the data, I build a model for training using the stored data.
 (coming soon)
 
 ## References
--	W. H. O. (WHO), "Global Health Estimates: Life expectancy and leading causes of death and disability," 2019. https://www.who.int/data/gho/data/themes/mortality- and-global-health-estimates (accessed Jun. 10, 2021).
--	H. S. N. Murthy and D. M. Meenakshi, "ANN, SVM and KNN Classifiers for Prognosis of Cardiac Ischemia- A Comparison," Bonfring Int. J. Res. Commun. Eng., vol. 5, no. 2, pp. 07–11, 2015, doi: 10.9756/bijrce.8030.
--	N. F. Hikmah, A. Arifin, T. A. Sardjono and E. A. Suprayitno, "A signal processing framework for multimodal cardiac analysis," 2015 International Seminar on Intelligent Technology and Its Applications (ISITIA), 2015, pp. 125-130, doi: 10.1109/ISITIA.2015.7219966.
--	N. F. Hikmah, A. Arifin, and T. A. Sardjono, "Delineation of Ecg Feature Extraction Using Multiresolution Analysis Framework," JUTI J. Ilm. Teknol. Inf., vol. 18, no. 2, p. 135, 2020, doi: 10.12962/j24068535.v18i2.a992. 
--	J. P. Martínez, R. Almeida, S. Olmos, A. P. Rocha, and P. Laguna, “A Wavelet-Based ECG Delineator Evaluation on Standard Databases,” IEEE Trans. Biomed. Eng., vol. 51, no. 4, pp. 570–581, 2004, doi: 10.1109/TBME.2003.821031. 
--	M. Bahoura, M. Hassani, and M. Hubin, "DSP implementation of wavelet transform for real time ECG wave forms detection and heart rate analysis," Comput. Methods Programs Biomed., vol. 52, no. 1, pp. 35–44, 1997, doi: 10.1016/S0169-2607(97)01780-X. 
--	M. Niknazar, B. V. Vahdat, and S. R. Mousavi, "Detection of characteristic points of ecg using quadratic spline wavelet transfrom," 3rd Int. Conf. Signals, Circuits Syst. SCS 2009, no. 2, pp. 2–7, 2009, doi: 10.1109/ICSCS.2009.5412588.
+-	Ischemia: https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates
+-	Neural Network: 
+	-	H. S. N. Murthy and D. M. Meenakshi: https://www.researchgate.net/profile/M-Meenakshi-2/publication/281423706_ANN_SVM_and_KNN_classifiers_for_prognosis_of_cardiac_ischemia-a_comparison/links/56db070908aebabdb412df04/ANN-SVM-and-KNN-classifiers-for-prognosis-of-cardiac-ischemia-a-comparison.pdf?_sg%5B0%5D=started_experiment_milestone&origin=journalDetail
+-	Discrete Wavelet Transform (DWT):
+	- 	N. F. Hikmah, A. Arifin, T. A. Sardjono and E. A. Suprayitno: https://ieeexplore.ieee.org/abstract/document/7219966
+	-	N. F. Hikmah, A. Arifin, and T. A. Sardjono: http://juti.if.its.ac.id/index.php/juti/article/view/992
+	-	J. P. Martínez, R. Almeida, S. Olmos, A. P. Rocha, and P. Laguna: https://ieeexplore.ieee.org/abstract/document/1275572 
+	-	M. Niknazar, B. V. Vahdat, and S. R. Mousavi: https://ieeexplore.ieee.org/abstract/document/5412588
+-	Embedded DWT: M. Bahoura, M. Hassani, and M. Hubin: https://www.sciencedirect.com/science/article/abs/pii/S016926079701780X 	
 
 ## Contact Us
 Email: achmadfachturrohman@gmail.com
