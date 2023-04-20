@@ -1,2 +1,2 @@
-# ANN to classify the decomposed and peaks detected of ECG signals
+# ANN to classify the decomposed and peaks of ECG signals
 This program is a myocardial ischemia detection using artificial neural network classifier from extracted ECG signals. The input of the ANN used in this study was obtained from discrete wavelet transforms, such as the 5th-scale decomposed signal and ECG peaks. From the tests I did, I got the best results with data containing signal information decomposed on a 5-point scale with 96.17% accuracy, 93.08% precision, 95.6% specificity, and 97.11% sensitivity.
