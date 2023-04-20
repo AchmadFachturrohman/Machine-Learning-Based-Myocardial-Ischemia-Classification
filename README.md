@@ -3,18 +3,22 @@ Ischemia is a heart disease caused by atherosclerosis, namely narrowing of blood
 
 ## Table of Contents
 - [Motivation](#section-1)
-- [Dataset](#section-2)
-- [Signal Processing](#section-3)
-- [Neural Network](#section-4)
-- [Result](#section-5)
-- [References](#section-6)
-- [Contact Us](#section-7)
-- [BibTex](#section-8)
+- [Block Diagram](#section-2)
+- [Dataset](#section-3)
+- [Signal Processing](#section-4)
+- [Neural Network](#section-5)
+- [Result](#section-6)
+- [References](#section-7)
+- [Contact Us](#section-8)
+- [BibTex](#section-9)
 
 ## Motivation
 The main motivation is to detect early the clinical condition of the patient's heart to avoid complications that can harm him in the future. and if he has symptoms, appropriate medical treatment can be carried out to minimize complications.
 
 Another motivation is to complete my studies and earn a bachelor's degree in engineering.
+
+## Block Diagram
+![diagram](https://user-images.githubusercontent.com/80017569/233285719-ac1f8f8e-5451-49ce-ac4d-a8e29d38f741.PNG)
 
 ## Dataset
 The ECG signal dataset used in this research origins from [Physionet](https://archive.physionet.org/cgi-bin/atm/ATM) with MIT-BIH Normal and MIT-BIH ST Change for Normal and Ischemia ECG signal, respectively. 
