@@ -25,9 +25,13 @@ The ECG signal dataset used in this research origins from [Physionet](https://ar
 
 ## Signal Processing
 This process is DWT to get the feature extraction data of the ECG signal, the 5th decomposed and all peaks of the ECG. The data is then saved in CSV format and used as an input to the Neural Network. I used 3000 sequence data of each type of data.
+- DWT Algorithm
+	![flowchart wavelet](https://user-images.githubusercontent.com/80017569/233288995-9c20791a-8b55-4ee7-b898-f01c40146d3f.jpg) 
 
 ## Neural Network
 After I got all of the data, I build a model for training using the stored data. The architecture that I used is an ANN with 250 nodes of inputs, 2 hidden layers, and 1 output layer with 2 nodes that represent the classes of normal and ischemia.
+- Model Architechture
+	![ANN Flowchart](https://user-images.githubusercontent.com/80017569/233289348-37af1815-a8c5-4951-86f4-7da743a39220.jpg)
 
 ## Result
 #### DWT with MIT-BIH ST-Change 300 
