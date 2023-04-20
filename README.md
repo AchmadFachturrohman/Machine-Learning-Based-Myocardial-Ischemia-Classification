@@ -37,7 +37,8 @@ After I got all of the data, I build a model for training using the stored data.
 	-	N. F. Hikmah, A. Arifin, and T. A. Sardjono: http://juti.if.its.ac.id/index.php/juti/article/view/992
 	-	J. P. Martínez, R. Almeida, S. Olmos, A. P. Rocha, and P. Laguna: https://ieeexplore.ieee.org/abstract/document/1275572 
 	-	M. Niknazar, B. V. Vahdat, and S. R. Mousavi: https://ieeexplore.ieee.org/abstract/document/5412588
--	Embedded DWT: M. Bahoura, M. Hassani, and M. Hubin: https://www.sciencedirect.com/science/article/abs/pii/S016926079701780X 	
+-	Embedded DWT: 
+	-	M. Bahoura, M. Hassani, and M. Hubin: https://www.sciencedirect.com/science/article/abs/pii/S016926079701780X 	
 
 ## Contact Us
 Email: achmadfachturrohman@gmail.com
