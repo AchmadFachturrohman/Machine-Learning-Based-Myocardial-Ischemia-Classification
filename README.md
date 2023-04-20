@@ -45,7 +45,7 @@ After I got all of the data, I build a model for training using the stored data.
 -	Linkedin: www.linkedin.com/in/achmad-fachturrohman/
 
 ## BibTex
-in the process of publication in ICEBEHI 2022
+Publication process in ICEBEHI 2022
 
 
 
