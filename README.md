@@ -42,7 +42,7 @@ After I got all of the data, I build a model for training using the stored data.
 
 ## Contact Us
 -	Email: achmadfachturrohman@gmail.com
--	Linkedin: linkedin.com/in/achmad-fachturrohman/
+-	Linkedin: www.linkedin.com/in/achmad-fachturrohman/
 
 ## BibTex
 in the process of publication in ICEBEHI 2022
