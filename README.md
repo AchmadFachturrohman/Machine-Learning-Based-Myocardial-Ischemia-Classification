@@ -30,7 +30,14 @@ This process is DWT to get the feature extraction data of the ECG signal, the 5t
 After I got all of the data, I build a model for training using the stored data. The architecture that I used is an ANN with 250 nodes of inputs, 2 hidden layers, and 1 output layer with 2 nodes that represent the classes of normal and ischemia.
 
 ## Result
-(coming soon)
+#### DWT with MIT-BIH ST-Change 300 
+![Capture dwt 1](https://user-images.githubusercontent.com/80017569/233286363-5b631c35-23e3-4faf-8bb4-74230216ce05.PNG)
+#### DWT with MIT-BIH Normal 16773
+![Capture dwt 2](https://user-images.githubusercontent.com/80017569/233287213-e0459f58-fdbd-4078-9d4d-7dd0e1119330.PNG)
+#### DWT with MS400 ST-Wave Elevation 0.3mV
+![Capture dwt e 0 3](https://user-images.githubusercontent.com/80017569/233287500-3bc7c8f5-62b2-498e-8ac7-549c3a3ef5de.PNG)
+#### DWT with MS400 ST-Wave Depression 0.3mV
+![Capture dwt d 0 3](https://user-images.githubusercontent.com/80017569/233287616-e63c7801-33a0-4e35-bcb3-f55fbbbeb84e.PNG)
 
 ## References
 -	Ischemia: https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates
