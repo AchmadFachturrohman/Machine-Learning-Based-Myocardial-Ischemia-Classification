@@ -41,8 +41,8 @@ After I got all of the data, I build a model for training using the stored data.
 	-	M. Bahoura, M. Hassani, and M. Hubin: https://www.sciencedirect.com/science/article/abs/pii/S016926079701780X 	
 
 ## Contact Us
-Email: achmadfachturrohman@gmail.com
-Linkedin: linkedin.com/in/achmad-fachturrohman/
+-	Email: achmadfachturrohman@gmail.com
+-	Linkedin: linkedin.com/in/achmad-fachturrohman/
 
 ## BibTex
 in the process of publication in ICEBEHI 2022
