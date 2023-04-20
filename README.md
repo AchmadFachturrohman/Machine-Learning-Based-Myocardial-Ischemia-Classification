@@ -19,7 +19,9 @@ The main motivation is to detect early the clinical condition of the patient's h
 Another motivation is to complete my studies and earn a bachelor's degree in engineering.
 
 ## Block Diagram
-![diagram](https://user-images.githubusercontent.com/80017569/233285719-ac1f8f8e-5451-49ce-ac4d-a8e29d38f741.PNG)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80017569/233285719-ac1f8f8e-5451-49ce-ac4d-a8e29d38f741.PNG">
+</p>
 
 ## Dataset
 The ECG signal dataset used in this research origins from [Physionet](https://archive.physionet.org/cgi-bin/atm/ATM) with MIT-BIH Normal and MIT-BIH ST Change for Normal and Ischemia ECG signal, respectively. 
@@ -27,49 +29,74 @@ The ECG signal dataset used in this research origins from [Physionet](https://ar
 ## Signal Processing
 This process is DWT to get the feature extraction data of the ECG signal, the 5th decomposed and all peaks of the ECG. The signal will be extracted using DWT with Quadratic Spline. The saved data in CSV will be used as an input to the Neural Network. I used 3000 sequence data of each type of data.
 - DWT Algorithm
-	
-	![flowchart wavelet](https://user-images.githubusercontent.com/80017569/233288995-9c20791a-8b55-4ee7-b898-f01c40146d3f.jpg) 
-
+	<p align="center">
+  	<img src="https://user-images.githubusercontent.com/80017569/233288995-9c20791a-8b55-4ee7-b898-f01c40146d3f.jpg">
+	</p>
+		
 ## Neural Network
 After I got all of the data, I build a model for training using the stored data. The architecture that I used is an ANN with 250 nodes of inputs, 2 hidden layers, and 1 output layer with 2 nodes that represent the classes of normal and ischemia.
 - Model Architecture
-   	
-	![ANN Flowchart](https://user-images.githubusercontent.com/80017569/233289348-37af1815-a8c5-4951-86f4-7da743a39220.jpg) 
+   	<p align="center">
+  	<img src="https://user-images.githubusercontent.com/80017569/233289348-37af1815-a8c5-4951-86f4-7da743a39220.jpg">
+	</p>
 	
 ## Experiment
 Experiments conducted in this study by comparing the neural network results of two types of input data including ECG signal peak data and 5th decomposition data generated from DWT.
 
 ## Result
-#### DWT with MIT-BIH ST-Change 300 
-![Capture dwt 1](https://user-images.githubusercontent.com/80017569/233286363-5b631c35-23e3-4faf-8bb4-74230216ce05.PNG)
+#### DWT with MIT-BIH ST-Change 300
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80017569/233286363-5b631c35-23e3-4faf-8bb4-74230216ce05.PNG">
+</p>
+
 #### DWT with MIT-BIH Normal 16773
-![Capture dwt 2](https://user-images.githubusercontent.com/80017569/233287213-e0459f58-fdbd-4078-9d4d-7dd0e1119330.PNG)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80017569/233287213-e0459f58-fdbd-4078-9d4d-7dd0e1119330.PNG">
+</p>
+
 #### DWT with MS400 ST-Wave Elevation 0.3mV
-![Capture dwt e 0 3](https://user-images.githubusercontent.com/80017569/233287500-3bc7c8f5-62b2-498e-8ac7-549c3a3ef5de.PNG)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80017569/233287500-3bc7c8f5-62b2-498e-8ac7-549c3a3ef5de.PNG">
+</p>
+
 #### DWT with MS400 ST-Wave Depression 0.3mV
-![Capture dwt d 0 3](https://user-images.githubusercontent.com/80017569/233287616-e63c7801-33a0-4e35-bcb3-f55fbbbeb84e.PNG)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80017569/233287616-e63c7801-33a0-4e35-bcb3-f55fbbbeb84e.PNG">
+</p>
+
 #### Experiment Result Comparison
 - Training and Validation Accuracy
 	- Peaks Data
+	<p align="center">
+	<img src="https://user-images.githubusercontent.com/80017569/233293461-c01efb5e-d250-479e-a3f0-b0206524b5ef.jpg">
+	</p>
 	
-	![acc_plot](https://user-images.githubusercontent.com/80017569/233293461-c01efb5e-d250-479e-a3f0-b0206524b5ef.jpg)	
 	- Decomposed Data
+	<p align="center">
+	<img src="https://user-images.githubusercontent.com/80017569/233294887-ea408fc6-3ae6-4c55-a094-39c2a88fafa4.jpg">
+	</p>
 	
-	![acc_plot_decomp](https://user-images.githubusercontent.com/80017569/233294887-ea408fc6-3ae6-4c55-a094-39c2a88fafa4.jpg)
 - Confusion Matrix
-	- Peaks Data
+	- Peaks Data	
+	<p align="center">
+	<img src="https://user-images.githubusercontent.com/80017569/233293797-e332389f-9d8e-4a83-889b-a40e56eab181.jpg">
+	</p>
 	
-	![confusion_matrix](https://user-images.githubusercontent.com/80017569/233293797-e332389f-9d8e-4a83-889b-a40e56eab181.jpg)	
 	- Decomposed Data
+	<p align="center">
+	<img src="https://user-images.githubusercontent.com/80017569/233294943-6534a20c-d3c1-4ef4-bff8-879e5dc20ddb.jpg">
+	</p>
 	
-	![confusion_matrix_decomp](https://user-images.githubusercontent.com/80017569/233294943-6534a20c-d3c1-4ef4-bff8-879e5dc20ddb.jpg)
 - Classification Reports
 	- Peaks Data
-	
-	![classification_report](https://user-images.githubusercontent.com/80017569/233294191-1c2fc20c-ff28-4d99-b5d8-28e9512b198c.jpg)	
+	<p align="center">
+	<img src="https://user-images.githubusercontent.com/80017569/233294191-1c2fc20c-ff28-4d99-b5d8-28e9512b198c.jpg">
+	</p>
+		
 	- Decomposed Data
-	
-	![classification_report_decomp](https://user-images.githubusercontent.com/80017569/233295002-41816058-e96a-40ce-8a70-559576c40257.jpg)
+	<p align="center">
+	<img src="https://user-images.githubusercontent.com/80017569/233295002-41816058-e96a-40ce-8a70-559576c40257.jpg">
+	</p>
 
 ## References
 -	Ischemia: https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates
