@@ -65,15 +65,17 @@ Experiments conducted in this study by comparing the neural network results of t
 </p>
 
 #### Experiment Result Comparison
-- Training and Validation Accuracy
+- Training and Validation
 	- Peaks Data
 	<p align="center">
 	<img src="https://user-images.githubusercontent.com/80017569/233293461-c01efb5e-d250-479e-a3f0-b0206524b5ef.jpg">
-	</p>
+	<img src="https://user-images.githubusercontent.com/80017569/234760086-168df7d0-475c-499f-bdca-4fa94fd38ce8.jpg">
+	</p>	
 	
 	- Decomposed Data
 	<p align="center">
 	<img src="https://user-images.githubusercontent.com/80017569/233294887-ea408fc6-3ae6-4c55-a094-39c2a88fafa4.jpg">
+	<img src="https://user-images.githubusercontent.com/80017569/234760732-14cf0791-28d4-4e9c-b422-b0a449d3c723.jpg">
 	</p>
 	
 - Confusion Matrix
